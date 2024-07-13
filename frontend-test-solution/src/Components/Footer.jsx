@@ -17,10 +17,8 @@ export default function Footer({ onClick, onReset, onShowName, showPanel }) {
       <div className="btn">
         {showPanel ? (
           <div className="showPanel">
-            <ul>
-              <span onClick={onReset}> {">"} zresetuj ustawienia</span> <br />
-              <span onClick={onShowName}>{">"} pokaż dane osobowe</span>
-            </ul>
+            <span onClick={onReset}> &gt; zresetuj ustawienia</span>
+            <span onClick={onShowName}>&gt; pokaż dane osobowe</span>
           </div>
         ) : undefined}
         <button className="show-btn" onClick={onClick}>

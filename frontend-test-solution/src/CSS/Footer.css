@@ -4,6 +4,7 @@ footer {
   align-items: center;
   height: 15%;
   background-color: #15161a;
+
   z-index: 4;
 }
 
@@ -106,10 +107,21 @@ span:hover {
 }
 
 .showPanel {
-  z-index: 2;
   position: absolute;
-  height: 8rem;
-  bottom: 6rem;
+  width: 13.6rem;
+  height: 5rem;
+  bottom: 15vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #ffffff;
+  border-radius: 3px;
+  color: black;
+  -webkit-box-shadow: 0px 2px 22px 1px rgba(0, 0, 0, 1);
+  -moz-box-shadow: 0px 2px 22px 1px rgba(0, 0, 0, 1);
+  box-shadow: 0px 2px 22px 1px rgba(0, 0, 0, 1);
+  padding: 3px;
 }
 
 @keyframes rotate {
@@ -128,7 +140,6 @@ span:hover {
 
   footer {
     justify-content: space-evenly;
-    flex-shrink: 2;
   }
   .btn {
     margin: 0;
