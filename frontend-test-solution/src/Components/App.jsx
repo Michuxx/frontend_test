@@ -101,14 +101,14 @@ function App() {
           />
           <FunctionalBlock onAdd={handleAdd} onReplace={handleReplace} />
         </div>
-        <LongWordsBlock
-          showPanel={isClicked}
-          onShowName={handleShowName}
-          onReset={handleReset}
-          text={text}
-        />
+        <LongWordsBlock text={text} />
       </div>
-      <Footer onClick={handleShowPanel} />
+      <Footer
+        showPanel={isClicked}
+        onClick={handleShowPanel}
+        onShowName={handleShowName}
+        onReset={handleReset}
+      />
     </div>
   );
 }

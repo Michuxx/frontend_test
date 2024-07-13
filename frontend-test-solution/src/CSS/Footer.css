@@ -4,6 +4,7 @@ footer {
   align-items: center;
   height: 15%;
   background-color: #15161a;
+  z-index: 4;
 }
 
 .companyLogo {
@@ -97,6 +98,18 @@ body:has(.cssWords:hover) .square {
   margin: 0;
   color: #25282d;
   font-size: 1.2rem;
+}
+
+span:hover {
+  cursor: pointer;
+  color: #c38844;
+}
+
+.showPanel {
+  z-index: 2;
+  position: absolute;
+  height: 8rem;
+  bottom: 6rem;
 }
 
 @keyframes rotate {
