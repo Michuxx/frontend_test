@@ -13,4 +13,4 @@
 - przycisk rozwijający i zwijający ograniczeń liń
 - tryb rensponsywny
 - zastosowanie sie do warunków oraz głównemu celowi
-- podgląd dostępny pod:
+- podgląd dostępny pod: https://frontend-test-recruitment.onrender.com/
