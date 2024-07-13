@@ -1,0 +1,79 @@
+section {
+  width: 50%;
+}
+
+.radioButtons {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.firstContainer {
+  padding-right: 2rem;
+  text-align: center;
+}
+
+.firstWordParagraph {
+  font-size: 1.2rem;
+}
+
+.radioButtons-col {
+  padding: 10px;
+  display: flex;
+}
+
+label {
+  margin-left: 0.5rem;
+}
+
+.custom-radio-btn {
+  width: 20px;
+  height: 20px;
+  border: 3.3px solid white;
+  margin-left: 20px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.custom-radio-btn:hover {
+  cursor: pointer;
+}
+
+.custom-radio-btn .checkmark {
+  width: calc(100% - 8px);
+  height: calc(100% - 8px);
+  border-radius: 50%;
+  background-color: white;
+  display: none;
+}
+
+.custom-radio-btn input:checked + .checkmark {
+  display: inline-block;
+}
+.custom-radio-btn input:checked + label {
+  background-color: red;
+}
+
+.custom-radio-btn input {
+  display: none;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+@media screen and (max-width: 960px) {
+  .firstContainer {
+    text-align: left;
+    padding-right: 0;
+  }
+
+  .firstWordParagraph {
+    padding-left: 10px;
+  }
+  .custom-radio-btn {
+    margin: 0;
+  }
+}

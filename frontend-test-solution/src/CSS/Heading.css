@@ -1,0 +1,35 @@
+.headingContainer {
+  height: 20%;
+  background-color: #2a2d36;
+}
+
+.mainWord {
+  padding-top: 5rem;
+  width: 100%;
+
+  background-color: #2a2d36;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+h1 {
+  padding-top: 0;
+  margin: 0;
+}
+
+.bottomBorder {
+  border-bottom: 1px solid white;
+  padding-top: 5px;
+  width: 10rem;
+  margin: auto;
+}
+
+@media screen and (max-width: 960px) {
+  .mainWord {
+    padding-top: 1rem;
+  }
+  .headingContainer {
+    height: 13%;
+  }
+}

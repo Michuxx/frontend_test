@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+  color: white;
+}
+
+.container {
+  height: 100vh;
+}
+
+.middleBlock {
+  display: flex;
+  justify-content: space-between;
+  height: 50%;
+  background-color: #2a2d36;
+}
+
+.rensposive {
+  display: flex;
+  width: 66%;
+}
+
+@media screen and (max-width: 960px) {
+  .middleBlock {
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 57%;
+  }
+
+  .rensposive {
+    width: 100%;
+  }
+}

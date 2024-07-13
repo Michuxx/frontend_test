@@ -1,0 +1,127 @@
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 15%;
+  background-color: #15161a;
+}
+
+.companyLogo {
+  color: #25282d;
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+}
+.companyLogo p {
+  position: relative;
+  display: inline-block;
+}
+
+.companyLogo p::before {
+  content: "________";
+  color: #25282d;
+  position: absolute;
+  top: -5px;
+  left: -90px;
+}
+
+.companyLogo p::after {
+  content: "________";
+  color: #25282d;
+  position: absolute;
+  top: -5px;
+  right: -90px;
+}
+
+.show-btn {
+  width: 14rem;
+  height: 3rem;
+  font-family: "Open Sans", sans-serif;
+  background-color: transparent;
+  border: 1px solid #25282d;
+  color: #fff;
+  border-radius: 4px;
+  font-weight: bold;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='7.41' height='12' viewBox='0 0 7.41 12'%3E%3Cpath d='M10,6,8.59,7.41,13.17,12,8.59,16.59,10,18l6-6Z' transform='translate(-8.59 -6)' fill='%23fff'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 24px center;
+}
+
+.cia {
+  display: flex;
+  margin-right: 20%;
+}
+.btn {
+  margin-left: 20%;
+}
+
+.show-btn:hover {
+  cursor: pointer;
+  border-color: #fff;
+}
+
+.square:hover {
+  border: 2px solid #b58c56;
+  cursor: pointer;
+  animation-name: rotate;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+body:has(.specificWord:hover) .specificWord {
+  color: #a4a8b3;
+}
+
+body:has(.cssWords:hover) .square {
+  animation-name: rotate;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  border: 2px solid #b58c56;
+  cursor: pointer;
+}
+
+.square {
+  width: 5rem;
+  height: 5rem;
+  border: 2px solid #25282d;
+}
+
+.cssWords {
+  position: relative;
+  left: -80px;
+}
+
+.cssWords p {
+  margin: 0;
+  color: #25282d;
+  font-size: 1.2rem;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(-360deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .companyLogo {
+    display: none;
+  }
+
+  footer {
+    justify-content: space-evenly;
+    flex-shrink: 2;
+  }
+  .btn {
+    margin: 0;
+  }
+
+  .cia {
+    margin: 0;
+  }
+}
