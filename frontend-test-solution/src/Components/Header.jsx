@@ -1,5 +1,5 @@
 import "../CSS/Header.css";
-import Photo from "../../public/iconUnhover.png";
+import Photo from "/iconUnhover.png";
 
 export default function Header({ name }) {
   return (
