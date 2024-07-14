@@ -7,7 +7,9 @@ export default function LongWordsBlock({ text }) {
         <b>BLOK Z DŁUGĄ NAZWĄ KTÓRA SAMA SIE PRZYTNIE ...</b>
       </p>
       <p className="loremIpsum">{text}</p>
-      <input type="checkbox" name="" className="expand-btn" />
+      {text.length > 0 ? (
+        <input type="checkbox" name="" className="expand-btn" />
+      ) : null}
       <div className="bottomPanel"></div>
     </div>
   );
